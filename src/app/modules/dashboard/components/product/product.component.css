@@ -1,0 +1,43 @@
+.product-container{
+  margin: 10px;
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  max-height: 645px;
+}
+
+.product-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image{
+  background-color: #70BB6C;
+  height: 350px;
+  width: 300px;
+}
+
+.product-name,
+.product-price,
+.product-description{
+  text-align: center;
+  margin: 10px 0;
+}
+
+.product-name{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.product-description{
+  color: #9F9F9F;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.product-price{
+  font-size: 1.2rem;
+  font-weight: bolder;
+}

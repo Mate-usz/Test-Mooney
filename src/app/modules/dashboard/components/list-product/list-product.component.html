@@ -1,1 +1,7 @@
-<p>list-product works!</p>
+<div class="product-list-container">
+  <div class="product-grid">
+    <ng-container *ngFor="let product of [0,1,2,3,4,5,6,7,8,9]">
+        <app-product></app-product>
+    </ng-container>
+  </div>
+</div>
