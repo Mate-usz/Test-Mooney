@@ -1,0 +1,24 @@
+
+<div class="login-header">
+  <h2>My Account</h2>
+</div>
+<div class="login-forms">
+  <div class="login-wrapper">
+    <app-log-form [logFormStyle]="{
+      title: 'Login',
+      showEmail: true,
+      showPassword: true,
+      buttonText: 'Accedi'}"
+      [redirect]="'../dashboard'">
+    </app-log-form>
+    <app-log-form [logFormStyle]="{
+      title: 'Registati',
+      showEmail: true,
+      showPassword: false,
+      buttonText: 'Registrati'}"
+      [redirect]="'/registration-success'">
+    </app-log-form>
+  </div>
+</div>
+
+

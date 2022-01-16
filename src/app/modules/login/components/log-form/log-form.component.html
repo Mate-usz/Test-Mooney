@@ -1,0 +1,14 @@
+<div class="form-container">
+  <h2>{{_logFormStyle.title}}</h2>
+  <form [formGroup]="logForm" class="form-layout" (ngSubmit)="onButtonClicked()">
+    <input *ngIf="_logFormStyle.showEmail" type="email" formControlName="email" placeholder="Email">
+    <div *ngIf="_logFormStyle.showPassword" class="form-password-container">
+      <input type="{{passwordType}}" formControlName="password" placeholder="Password">
+      <div class="eye-toggle" (click)="togglePassword()">
+        <img src="../../../../../assets/images/Eye.svg">
+      </div>
+    </div>
+    <p *ngIf="!_logFormStyle.showPassword">Una password verrà inviata al tuo indirizzo email</p>
+    <button [disabled]="!logForm.valid">{{_logFormStyle.buttonText}}</button>
+  </form>
+</div>

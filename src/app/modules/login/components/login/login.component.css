@@ -1,0 +1,23 @@
+.login-header{
+  background-color: #BACEB9;
+  text-align: end;
+  padding: 20px;
+}
+
+.login-header h2{
+  font-size: 2rem;
+  font-family: 'Blantick';
+}
+
+.login-forms{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  width: 100%;
+}
+
+.login-wrapper{
+  display: flex;
+  flex-direction: row;
+}

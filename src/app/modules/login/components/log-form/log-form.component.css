@@ -1,0 +1,59 @@
+.form-container{
+  text-align: center;
+  width: 50vw;
+  max-width: 700px;
+  height: 40vh;
+}
+
+.form-container h2{
+  font-size: 3.5rem;
+  font-family: 'Blantick';
+  font-weight: 500;
+}
+
+.form-layout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-layout input{
+  border: 2px solid #83B380;
+  border-radius: 50px;
+  height: 50px;
+  width: 35vw;
+  max-width: 500px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.form-layout button{
+  background: #83B380;
+  border-radius: 50px;
+  padding: 8px 20px;
+  color: white;
+  margin-top: 30px;
+  border: 0;
+}
+.form-layout button:enabled:hover{
+  background: #51894E;
+  cursor: pointer;
+}
+.form-layout button:disabled{
+  background: gray;
+}
+
+.form-layout p{
+  margin-top: 20px;
+  font-size: 1.7rem;
+}
+
+.form-password-container{
+  position: relative;
+}
+.eye-toggle{
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+  top:50%
+}
