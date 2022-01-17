@@ -4,17 +4,24 @@
 
 Questo progetto è stato creato e sviluppato interamente con Angular.
 
-Per far partire il progetto basta semplicemente digitare `ng serve` o `npm start` nella console.
+Per far partire il progetto è necessario digitare `ng serve` o `npm start` nella console.
+
+Questi sono i dati per l'account di test, se non si vuole ripetere più volte la registrazione.
+
+```
+test@mail.it
+12345
+```
 
 ## Informazioni sull'applicazione
 
-La prima cosa che possiamo notare una volta aperta l'applicazione in `localhost:4200` è che viene caricato in `lazy loading` il modulo login, il quale ci reindirizza direttamente al path `/login`. In questa pagina ci vengono richieste le credenziali di accesso o la registrazione al sito.
+Aperta l'applicazione in `localhost:4200` viene subito caricato in `lazy loading` il modulo login, il quale reindirizza direttamente al path `/login`. In questa pagina vengono richieste le credenziali di accesso o la registrazione al sito.
 
-Se abbiamo già registrato un account allora abbiamo la possibilità di accedere, altrimenti ci viene mostrato un messaggio di errore.
+Se l'utente è già registrato c'è la possibilità di accedere, altrimenti viene mostrato un messaggio di errore.
 
-Per registrarsi basta immettere la email nel campo richiesto sotto il titolo `Registrati` e cliccare sul pulsante corrispondente. Una volta fatto verremo reindirizzati alla pagina `/registration-success` che ci informa che la registrazione è stata effettuata con successo, dandoci anche la password generata casualmente.
+Per effettuare la registrazione bisogna immettere la email nel campo richiesto sotto il titolo `Registrati` e cliccare sul pulsante corrispondente. Dopo ciò, l'utente sarà reindirizzato alla pagina `/registration-success` che informa che la registrazione è stata effettuata con successo, dando anche la password generata casualmente.
 
-Una volta fatto il login nell'applicazione, ci verrà mostrata la pagina `/dashboard` nella quale avremo una lista di prodotti.
+Quando il login sarà andato a buon fine, verrà mostrata la pagina `/dashboard` nella quale potrà visionare la lista di prodotti.
 
 ## Informazioni sullo sviluppo
 
@@ -44,4 +51,4 @@ Una volta fatto il login nell'applicazione, ci verrà mostrata la pagina `/dashb
 
 - si chiedeva specificatamente di non utilizzare framework come `bootstrap`, quindi ho utilizzato `css` nativo. Per evitare ripetizioni di stili e un file più pulito si può utilizzare l'estensione di css `SCSS`;
 - i prodotti possono essere dinamici creando un nuovo model `product` e passandolo al componente correlato;
-- in `list-product` invece di ciclare fino a 10 (hard coded) è possibile inserire dinamicamente anche questo parametro, che ci permetterà di visualizzare nella lista quanti prodotti vogliamo;
+- in `list-product` invece di ciclare fino a 10 (hard coded) è possibile inserire dinamicamente anche questo parametro, che ci permetterà di visualizzare nella lista quanti prodotti vogliamo.
