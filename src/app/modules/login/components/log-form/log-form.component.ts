@@ -36,6 +36,7 @@ export class LogFormComponent implements OnInit {
   logForm = new FormGroup({
     email: new FormControl('', Validators.compose([
       Validators.required,
+      Validators.pattern('^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}'),
       Validators.email
     ])),
     password: new FormControl('')
@@ -43,6 +44,9 @@ export class LogFormComponent implements OnInit {
 
   // Used to show/hide password
   passwordType: 'password' | 'text' = 'password';
+
+  // Used to show error message
+  valid = true;
 
   constructor(private router: Router, private accountService: AccountService) { }
 
@@ -58,7 +62,7 @@ export class LogFormComponent implements OnInit {
     if(!this._logFormStyle.showPassword)
       this.accountService.emailToRegister(this.logForm.controls['email'].value);
     else
-      this.accountService.accountToLog(this.logForm);
+      this.valid = this.accountService.accountToLog(this.logForm);
 
     this.router.navigate([this.redirect]);
   }

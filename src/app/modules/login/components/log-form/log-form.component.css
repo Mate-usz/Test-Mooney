@@ -57,3 +57,35 @@
   right: 20px;
   top:50%
 }
+
+.validation-text{
+  color: orange;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1024px){
+  .form-layout p{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 750px){
+
+  .form-container{
+    margin-top: 50px;
+    width: 85vw;
+    height: 100%;
+    max-width: 700px;
+  }
+  .form-layout input{
+    width: 100%;
+    max-width: 300px;
+  }
+  .form-layout p{
+    font-size: 1.3rem;
+  }
+  .form-password-container{
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -8,6 +8,7 @@
         <img src="../../../../../assets/images/Eye.svg">
       </div>
     </div>
+    <p *ngIf="!valid" class="validation-text">Indirizzo email o password errata.</p>
     <p *ngIf="!_logFormStyle.showPassword">Una password verrà inviata al tuo indirizzo email</p>
     <button [disabled]="!logForm.valid">{{_logFormStyle.buttonText}}</button>
   </form>

@@ -41,3 +41,14 @@
   font-size: 1.2rem;
   font-weight: bolder;
 }
+
+@media screen and (max-width:400px) and (min-width:250px){
+  .product-container{
+    max-width: 250px;
+    max-height: 550px;
+  }
+  .product-image{
+    width: 100%;
+    height: 300px;
+  }
+}
